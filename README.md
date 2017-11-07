@@ -14,3 +14,6 @@ docker save <image name> > <name of your choice>.tar
 
 #load a tar image file
 docker load < <filename>.tar
+
+#required first to start daemon
+sudo dockerd
