@@ -21,3 +21,10 @@ docker load < <filename>.tar
 
 ## required first to start daemon
 sudo dockerd
+
+# Installing Ubuntu image
+su
+docker pull ubuntu:xenial
+docker run -it --name <name> ubuntu:xenial
+docker start <name>
+docker exec -it <name> bash
