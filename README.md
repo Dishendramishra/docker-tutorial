@@ -5,26 +5,40 @@ https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-from
 
 
 ## list docker images
+```
 docker images
+```
 
 ## list docker containers
+```
 docker ps -a
+```
 
 ## save changes to a container as a image
+```
 docker commit <CONTAINER ID> <name of your choice>
+```
 
 ## save image file
+```
 docker save <image name> > <name of your choice>.tar
+```
 
 ## load a tar image file
+```
 docker load < <filename>.tar
+```
 
 ## required first to start daemon
+```
 sudo dockerd
+```
 
 # Installing Ubuntu image
-su
-docker pull ubuntu:xenial
-docker run -it --name <name> ubuntu:xenial
-docker start <name>
-docker exec -it <name> bash
+```
+su  
+docker pull ubuntu:xenial  
+docker run -it --name <name> ubuntu:xenial  
+docker start <name>  
+docker exec -it <name> bash  
+```
